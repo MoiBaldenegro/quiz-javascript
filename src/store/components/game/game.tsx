@@ -3,6 +3,7 @@ import { UseQuestionsStore } from "../../questions";
 import Question from "../question/question";
 import { useEffect } from "react";
 import { ArrowBackIosNew, ArrowForwardIos } from "@mui/icons-material";
+import Footer from "../../../footer/footer";
 
 
 export default function Game(){
@@ -29,6 +30,8 @@ export default function Game(){
                 </IconButton>
             </Stack>
             <Question info={currentQuestion} />
+      <Footer/>
+
             
         </div>
     )

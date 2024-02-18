@@ -18,7 +18,7 @@ export default function Question({info}: any){
     const getBackground = (info: QuizQuestion, index: number) => {
     const { userSelectedAnswer, correctAnswer } = info;
         if(userSelectedAnswer == null) return "transparent";
-        if(index !== correctAnswer && index !== userSelectedAnswer) return "transparent";
+        if(index != correctAnswer && index != userSelectedAnswer) return "red";
         if(index === correctAnswer) return "green";
         if(index === userSelectedAnswer) return "red";
  

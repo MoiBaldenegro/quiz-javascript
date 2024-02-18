@@ -4,6 +4,7 @@ import { JsLogo } from './javascriptLogo'
 import Start from './start'
 import { UseQuestionsStore } from './store/questions'
 import Game from './store/components/game/game'
+import Footer from './footer/footer'
 
 function App() {
   const { questions } = UseQuestionsStore();
